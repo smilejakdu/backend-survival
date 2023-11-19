@@ -59,3 +59,21 @@ LinkedList 의 또 다른 단점은 참조자를 위해 추가적인 메모리�
 
 ## ✅ Map
 
+Map 은 데이터를 키-값 쌍으로 저장합니다. 각 키는 맵 내에서 유일해야한다.
+
+키는 중복 될 수 없습니다. 새로운 키-값 쌍을 추가할 때 이미 존재하는 키를 사용하면, 기존의 값이 새 값으로 대체됩니다. 대부분의 Map 구현체는 요소의 순서를 보장하지 않습니다. 순서를 보장하는 구현체도 있지만 기본적으로 Map 은 순서를 고려하지 않는 데이터 구조이다.
+
+
+
+```java
+Map<String, Integer> map = new HashMap<>();
+map.put("apple", 10);
+map.put("orange", 20);
+
+int appleCount = map.get("apple"); // 10
+int bananaCount = map.getOrDefault("banana", 0); // 0, "banana" 키가 없으므로 기본값 0 반환
+
+map.remove("orange"); // "orange" 키-값 쌍을 제거
+
+```
+
