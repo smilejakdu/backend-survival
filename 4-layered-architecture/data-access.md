@@ -1,8 +1,12 @@
 # Data Access
 
-
-
 ## ✅ DAO(Data Access Object)
+
+<figure><img src="../.gitbook/assets/스크린샷 2023-11-19 오후 5.10.27.png" alt=""><figcaption></figcaption></figure>
+
+실제 데이터에 접근해서 변경하는 부분은 Repository 객체이므로, 이러한 Repository 가 바로 DAO ( Data Access Object) 이다.
+
+엄밀히 말하면 DAO 와 Repository 는 다르다.
 
 ## ✅ List
 
@@ -10,7 +14,7 @@
 * 내부적으로 동적 배열을 사용하여 요소를 저장한다.
 * 요소의 추가 및 인덱스를 통한 접근이 빠르다
 
-###
+
 
 <figure><img src="../.gitbook/assets/스크린샷 2023-11-19 오후 4.35.14.png" alt=""><figcaption></figcaption></figure>
 
