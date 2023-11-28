@@ -86,7 +86,7 @@ import org.springframework.stereotype.Component;
  * @since : 2023/03/01
  */
 @Aspect
-@Component // 
+@Component // 어노테이션들이 들어있다.
 @Slf4j // 로깅에 대한 추상 레이어를 제공하는 인터페이스의 모음 ex ) log.info();
 public class LoggingAspect {
 
@@ -150,17 +150,22 @@ public class LoggingAspect {
 }
 ```
 
+### 📌 @Component
 
 
 
+<figure><img src="../.gitbook/assets/스크린샷 2023-11-28 오후 11.56.06.png" alt=""><figcaption></figcaption></figure>
 
+@Controller, @Service, @Repository 어노테이션들은 @Component 어노테이션의 구체화된 형태이다.
 
+어노테이션을 세분화 함으로써 가독성 측면에서 해당 각각의 어노테이션을 가진 클래스의 역할을 알 수 있게 된다.
 
+## ✅ Dependency Injection
 
+## ✅ 싱글턴 패턴
 
-*
-* Dependency Injection
-* 싱글턴 패턴
-* IoC(Inversion of Control)
-* Spring Bean
-* BeanFactory
+## ✅ IoC(Inversion of Control)
+
+## ✅ Spring Bean
+
+## ✅ BeanFactory
