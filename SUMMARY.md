@@ -13,3 +13,6 @@
   * [Layered Architecture](4-layered-architecture/layered-architecture.md)
   * [Data Access](4-layered-architecture/data-access.md)
   * [Domain Model](4-layered-architecture/domain-model.md)
+* [5주차 DI & Spring Test](5-di-and-spring-test/README.md)
+  * [01-Dependency Injection](5-di-and-spring-test/01-dependency-injection.md)
+  * [Page 2](5-di-and-spring-test/page-2.md)
