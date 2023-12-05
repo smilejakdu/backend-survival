@@ -72,7 +72,42 @@ RequestMapping 을 이용해서 하나로 모아줄수 있다.
 
 이후 url 이나 http 로 요청을 테스트를 해본다.
 
+```java
+package com.ahastudio.api.rest.demo.controllers;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/posts")
+public class PostController {
+    @GetMapping
+    public String getPosts() {
+        return "posts";
+    }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public String create() {
+        return "create post";
+    }
+
+    @PatchMapping("/{id}")
+    public String update(@PathVariable Long id) {
+        return "update post " + id;
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable Long id) {
+        return "delete post " + id;
+    }
+}
+
+```
+
+
+
+##
 
 ## ✅ RequestMapping
 

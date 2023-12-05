@@ -4,7 +4,9 @@ description: Data Transfer Obje
 
 # Dto
 
-DTO (Data Transfer Object) 란
+
+
+## DTO (Data Transfer Object) 란
 
 When you're working with a remote interface, such as Remote Facade,
 
@@ -26,9 +28,8 @@ each call to it is expensive.
   * 제대로 된 객체가 아니라 그냥 무기력한 데이터 덩어리. C/C++ 등에선 구조체(struct)로 구분할 수 있지만, Java에선 불가능. 최신 Java에선 record를 활용할 수 있지만, 오래된 Bean 관련 라이브러리에선 지원하지 않음
 * Tier 간 통신
   * F/E 와 B/E 사이
-    * 우리가 오늘 집중하려는 부분
     * DTO 자체를 그대로 전송할 수는 없고, 직렬화(마샬링)를 통해야 한다.
-    * 어떤 직렬화 기술을 사용할 건지도 결정해야 함. -> XML, JSON
+    * 어떤 직렬화 기술을 사용할 건지도 결정해야 함. -> XML,  JSON
   * B/E 와 DB 사이
     * 아주 옛날에는 Value Object 를 DTO 란 의미로 썼지만, 재빨리 Transfer Object 라고 정정함.\
       아직도 한국의 오래된 SI 기업에서는 VO 를 DTO 란 의미로 사용 ( DAO 와 VO를 쓰고 있다면 대부분 여기에 속함 )&#x20;
