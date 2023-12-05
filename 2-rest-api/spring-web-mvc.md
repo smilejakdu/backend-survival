@@ -1,5 +1,79 @@
 # Spring Web MVC
 
+<figure><img src="../.gitbook/assets/스크린샷 2023-12-05 오후 4.50.33.png" alt=""><figcaption></figcaption></figure>
+
+프로젝트를 생성하고 프로젝트를 잘 생성했는지 테스트하기위해 설정한다.
+
+cmd + , -> + 버튼을 클릭한다 -> gradle 를 추가하고 설정한다.
+
+<figure><img src="../.gitbook/assets/스크린샷 2023-12-05 오후 4.52.43.png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 수업 내용
+
+## Spring Web MVC로 구현
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/31607771-a960-46fd-b350-c0135aefc9b4.png" alt=""><figcaption></figcaption></figure>
+
+많이 넣지말고 롬북 Dev Tools , Spring Web 이렇게 3개만 넣어주도록 한다.
+
+제대로 생성이 되었는지 test 설정을 해준다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/1000473c-09ae-4282-97be-412c4e93ec2b.png" alt=""><figcaption></figcaption></figure>
+
+Controller 를 만들어준다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/c1e2e185-9665-4b43-bc90-f2bb99339a84.png" alt=""><figcaption></figcaption></figure>
+
+post 를 먼저했고 CRUD 니까 나머지도해준다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/272fb5f3-478c-480d-afc4-d816bfceab4a.png" alt=""><figcaption></figcaption></figure>
+
+근데 1과 2의 차이를 조금 구분하고싶다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/8f8f0c53-e831-4123-a76c-c329f6803c97.png" alt=""><figcaption></figcaption></figure>
+
+에러 길이가 너무 길다. 이럴때 따로 설정할 수 있다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/07cc6513-2f6d-44eb-bcdd-6f5e4d9eb716.png" alt=""><figcaption></figcaption></figure>
+
+다 작성을 했으면 Post 를 해본다.
+
+Post 에는 내용부분을 body 에 담아서 넘겨줘야한다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/c056f819-22d4-4fb2-99ff-66897353389a.png" alt=""><figcaption></figcaption></figure>
+
+이후 json 형식으로 return 하고 싶을때
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/3ea5ca85-3c55-4618-a69e-935ff0a5961f.png" alt=""><figcaption></figcaption></figure>
+
+원래는 이렇게 하면안되지만 우선은 이렇게하도록 하자
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/1672571f-f9ed-4b47-8737-24bbcf4f795f.png" alt=""><figcaption></figcaption></figure>
+
+수정하고 나서 다시 빌드하고 실행한다.
+
+위의 url 주소를 보면 앞에 posts 가 중복해서 들어가고 있다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/248d95d2-a2b1-4cef-bc84-596a7d1d1029.png" alt=""><figcaption></figcaption></figure>
+
+GetMapping 에 들어가면
+
+RequestMapping 어노테이션이 보인다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/18a3425e-ec74-4cf1-bddd-1e1dff7ba7b0.png" alt=""><figcaption></figcaption></figure>
+
+RequestMapping 을 이용해서 하나로 모아줄수 있다.
+
+<figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/f598ca893b8e4ebab5aa181708cc3124/3c1767c6-ecca-4dfe-a2d2-f78b23c323ea.png" alt=""><figcaption></figcaption></figure>
+
+이런식으로 변경할 수 있다.
+
+이후 url 이나 http 로 요청을 테스트를 해본다.
+
+
+
 ## ✅ RequestMapping
 
 * HTTP 요청을 특정 메소드에 매핑하기 위해 사용된다.
