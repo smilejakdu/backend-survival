@@ -1,7 +1,5 @@
 # CORS
 
-
-
 ## CORS 란
 
 CORS (Cross-Origin Resource Sharing)는 웹 페이지에서 실행되는 코드가 다른 도메인의 리소스에 액세스할 수 있도록 하는 보안 메커니즘입니다. 웹 보안의 중요한 부분인 동일 출처 정책(Same-Origin Policy)은 기본적으로 한 출처(origin)에서 로드된 웹 페이지가 다른 출처의 리소스와 상호 작용하는 것을 제한합니다. CORS는 이러한 제한을 안전한 방식으로 완화하는 방법을 제공합니다.
@@ -89,8 +87,6 @@ HTTP/1.1 200 OK
 
 <figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/c8d1a914431d4213a148e1d2848490b0/fe456ac8-fae4-4ec7-999b-c0272e14e7ed.png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/c8d1a914431d4213a148e1d2848490b0/0e19e903-5d7a-449e-90dd-98148b1499ef.png" alt=""><figcaption></figcaption></figure>
 
 잘 뜨는것을 확인 할 수 있습니다.
@@ -149,8 +145,6 @@ public PostDto delete (@PathVariable String id) {
 
 @SpringBootApplication 어노테이션이 있는 main 클래스로 간다.
 
-
-
 <figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/c8d1a914431d4213a148e1d2848490b0/315c14a5-2c78-4d67-b99d-008e371e722a.png" alt=""><figcaption></figcaption></figure>
 
 Methods 를 추가할수도 있다.
@@ -173,26 +167,17 @@ Methods 를 추가할수도 있다.
 
 ```
 
-
-
 ### ✅ 동일 출처 정책
 
 * Protocol + host + port 3가지가 같으면 동일 출처라고 한다.
-*
-
-    <figure><img src="../.gitbook/assets/스크린샷 2023-11-19 오전 12.23.12.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### ✅ 다른 출처 정책
 
 그렇다면 다른 출처 정책은 뭘까 ?
 
-request 보내는 client 와 request 를 받는 서버가 같은 출처에 있으면 동일  출처,
+request 보내는 client 와 request 를 받는 서버가 같은 출처에 있으면 동일 출처,
 
 서로 다른 서버에 있으면 다른 출처 요청 입니다.
-
-
 
 ## ✅ JSONP
 
@@ -213,9 +198,7 @@ JSONP 도 다른 도메인으로부터 데이터를 가져오기 위해 사용�
   Access-Control-Allow-Origin: https://example.com
 * 모든 출처 허용: 모든 출처에서의 접근을 허용하려면, 서버는 응답에 다음과 같은 헤더를 포함할 수 있습니다.
 
-## ✅ CrossOrigin`@CrossOrigin`&#x20;
-
-
+## ✅ CrossOrigin`@CrossOrigin`
 
 {% embed url="https://developer.mozilla.org/ko/docs/Web/HTML/Attributes/crossorigin" %}
 
