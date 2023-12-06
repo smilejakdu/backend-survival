@@ -158,18 +158,19 @@ Methods 를 추가할수도 있다.
 <figure><img src="https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/c8d1a914431d4213a148e1d2848490b0/6591489c-cacf-4416-972d-348aa01e0e08.png" alt=""><figcaption></figcaption></figure>
 
 ```java
-@Bean
-public WebMvcConfigurer webMvcConfigurer() {
-    return new WebMvcConfigureer() {
-        @Override
-        public void addCorsMappings(CorsRegistry registry) {
-            registry
-                .addMapping("/**")
-                .allowedMethods("GET","POST","PATCH","DELETE","OPTIONS")
-                .allowedOrigins("http://localhost:3000");
-        }
+    @Bean
+    public WebMvcConfigurer webMvcConfigureer() {
+        return new WebMvcConfigurer()  {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry
+                        .addMapping("/**")
+                        .allowedMethods("GET","POST","PATCH","DELETE","OPTIONS")
+                        .allowedOrigins("http://localhost:3000");
+            }
+        };
     }
-}
+
 ```
 
 
